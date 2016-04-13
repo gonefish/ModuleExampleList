@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Qian GuoQiang. All rights reserved.
 //
 
-#import <GQModule/GQModule.h>
+#import <GQModularize/GQModule.h>
 
 @interface ListModule : GQModule
 
