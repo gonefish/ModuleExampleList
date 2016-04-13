@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ModuleExampleList"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "List App"
 
   s.description  = <<-DESC
@@ -24,6 +24,6 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency 'GQModule'
+  s.dependency 'GQModularize'
 
 end

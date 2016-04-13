@@ -8,6 +8,7 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "ListModule.h"
 
 @interface MasterViewController ()
 
@@ -68,6 +69,7 @@
 
     NSDate *object = self.objects[indexPath.row];
     cell.textLabel.text = [object description];
+    cell.detailTextLabel.text = [[ListModule invokeWithIdentifier:@"SettingsModuleText"] gq_string];
     return cell;
 }
 

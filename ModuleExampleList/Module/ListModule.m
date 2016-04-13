@@ -10,7 +10,7 @@
 
 @implementation ListModule
 
-- (id)performWithToken:(NSString *)token inContext:(NSDictionary *)context
+- (id)performActionWithIdentifier:(NSString *)identifier options:(NSDictionary *)options
 {
     return [[UIStoryboard storyboardWithName:@"ListMain" bundle:nil] instantiateInitialViewController];
 }
