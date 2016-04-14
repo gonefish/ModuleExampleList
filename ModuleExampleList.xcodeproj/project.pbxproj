@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2FAC71E0037C454BCA032D04 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A786506ED0C5E422500AD5 /* libPods.a */; };
+		E302C4981CBF3FF0004C7D6D /* UIStoryboard+List.m in Sources */ = {isa = PBXBuildFile; fileRef = E302C4971CBF3FF0004C7D6D /* UIStoryboard+List.m */; };
 		E36D301C1CB8C0A6005F13EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E36D301B1CB8C0A6005F13EC /* main.m */; };
 		E36D301F1CB8C0A6005F13EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E36D301E1CB8C0A6005F13EC /* AppDelegate.m */; };
 		E36D30281CB8C0A6005F13EC /* ListMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E36D30261CB8C0A6005F13EC /* ListMain.storyboard */; };
@@ -22,6 +23,8 @@
 		2325510775525E10132BD0F3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		35A786506ED0C5E422500AD5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		76675537F28043930074F913 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E302C4961CBF3FF0004C7D6D /* UIStoryboard+List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+List.h"; sourceTree = "<group>"; };
+		E302C4971CBF3FF0004C7D6D /* UIStoryboard+List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+List.m"; sourceTree = "<group>"; };
 		E36D30171CB8C0A6005F13EC /* ModuleExampleList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuleExampleList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E36D301B1CB8C0A6005F13EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E36D301D1CB8C0A6005F13EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 				E38C99AA1CB8CE8500A3D215 /* MasterViewController.m */,
 				E38C99A41CB8CDA000A3D215 /* ListModule.h */,
 				E38C99A51CB8CDA000A3D215 /* ListModule.m */,
+				E302C4961CBF3FF0004C7D6D /* UIStoryboard+List.h */,
+				E302C4971CBF3FF0004C7D6D /* UIStoryboard+List.m */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 				E36D301C1CB8C0A6005F13EC /* main.m in Sources */,
 				E38C99AC1CB8CE8500A3D215 /* MasterViewController.m in Sources */,
 				E38C99A61CB8CDA000A3D215 /* ListModule.m in Sources */,
+				E302C4981CBF3FF0004C7D6D /* UIStoryboard+List.m in Sources */,
 				E38C99AB1CB8CE8500A3D215 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

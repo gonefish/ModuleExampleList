@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ModuleExampleList"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "List App"
 
   s.description  = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.author             = { "Q.GuoQiang" => "gonefish@gmail.com" }
 
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "8.0"
 
   s.source       = { :git => "https://github.com/gonefish/ModuleExampleList.git", :tag => s.version.to_s }
 

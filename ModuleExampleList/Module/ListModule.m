@@ -7,12 +7,13 @@
 //
 
 #import "ListModule.h"
+#import "UIStoryboard+List.h"
 
 @implementation ListModule
 
 - (id)performActionWithIdentifier:(NSString *)identifier options:(NSDictionary *)options
 {
-    return [[UIStoryboard storyboardWithName:@"ListMain" bundle:nil] instantiateInitialViewController];
+    return [[UIStoryboard listStoryboard] instantiateInitialViewController];
 }
 
 @end
