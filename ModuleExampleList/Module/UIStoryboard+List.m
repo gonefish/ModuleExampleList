@@ -13,7 +13,7 @@
 
 + (instancetype)listStoryboard
 {
-    return [UIStoryboard storyboardWithName:@"SettingsMain"
+    return [UIStoryboard storyboardWithName:@"ListMain"
                                      bundle:[NSBundle bundleForClass:[ListModule class]]];
 }
 
