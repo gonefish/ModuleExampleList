@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ModuleExampleList"
-  s.version      = "0.0.6"
+  s.version      = "0.0.8"
   s.summary      = "List App"
 
   s.description  = <<-DESC

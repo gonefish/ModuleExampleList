@@ -69,7 +69,8 @@
 
     NSDate *object = self.objects[indexPath.row];
     cell.textLabel.text = [object description];
-    cell.detailTextLabel.text = [[ListModule invokeWithIdentifier:@"SettingsModuleText"] gq_string];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"SettingsModule Text:%@", [[ListModule invokeWithIdentifier:@"SettingsModuleText"] gq_string]];
+    
     return cell;
 }
 
