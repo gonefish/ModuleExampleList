@@ -10,6 +10,8 @@
 #import "DetailViewController.h"
 #import "ListModule.h"
 
+#import <GQModularize/GQModuleCenter.h>
+
 @interface MasterViewController ()
 
 @property NSMutableArray *objects;
@@ -43,6 +45,8 @@
     [self.objects insertObject:[NSDate date] atIndex:0];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    
+    [GQModuleCenter postEventName:@"ListCount" updateValue:[NSString stringWithFormat:@"%lu", (unsigned long)[self.objects count]]];
 }
 
 #pragma mark - Segues

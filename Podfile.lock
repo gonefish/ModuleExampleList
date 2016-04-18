@@ -1,5 +1,5 @@
 PODS:
-  - GQModularize (0.1.1)
+  - GQModularize (0.1.2)
 
 DEPENDENCIES:
   - GQModularize (from `../GQModularize/`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../GQModularize/"
 
 SPEC CHECKSUMS:
-  GQModularize: cb6cc6247e85da80fdffec2457cea16f8bf096f3
+  GQModularize: 67a36468682224fa7e4da3b94cd12d6416dad6fd
 
 COCOAPODS: 0.39.0
