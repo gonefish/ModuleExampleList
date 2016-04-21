@@ -17,6 +17,7 @@
 		E38C99A61CB8CDA000A3D215 /* ListModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E38C99A51CB8CDA000A3D215 /* ListModule.m */; };
 		E38C99AB1CB8CE8500A3D215 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E38C99A81CB8CE8500A3D215 /* DetailViewController.m */; };
 		E38C99AC1CB8CE8500A3D215 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E38C99AA1CB8CE8500A3D215 /* MasterViewController.m */; };
+		E3CC40CE1CC87F9A001E6BB2 /* ListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CC40CD1CC87F9A001E6BB2 /* ListItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		E38C99A81CB8CE8500A3D215 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		E38C99A91CB8CE8500A3D215 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		E38C99AA1CB8CE8500A3D215 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		E3CC40CC1CC87F9A001E6BB2 /* ListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItem.h; sourceTree = "<group>"; };
+		E3CC40CD1CC87F9A001E6BB2 /* ListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				E38C99A51CB8CDA000A3D215 /* ListModule.m */,
 				E302C4961CBF3FF0004C7D6D /* UIStoryboard+List.h */,
 				E302C4971CBF3FF0004C7D6D /* UIStoryboard+List.m */,
+				E3CC40CC1CC87F9A001E6BB2 /* ListItem.h */,
+				E3CC40CD1CC87F9A001E6BB2 /* ListItem.m */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 				E36D301F1CB8C0A6005F13EC /* AppDelegate.m in Sources */,
 				E36D301C1CB8C0A6005F13EC /* main.m in Sources */,
 				E38C99AC1CB8CE8500A3D215 /* MasterViewController.m in Sources */,
+				E3CC40CE1CC87F9A001E6BB2 /* ListItem.m in Sources */,
 				E38C99A61CB8CDA000A3D215 /* ListModule.m in Sources */,
 				E302C4981CBF3FF0004C7D6D /* UIStoryboard+List.m in Sources */,
 				E38C99AB1CB8CE8500A3D215 /* DetailViewController.m in Sources */,

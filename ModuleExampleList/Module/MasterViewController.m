@@ -9,6 +9,7 @@
 #import "MasterViewController.h"
 #import "DetailViewController.h"
 #import "ListModule.h"
+#import "ListItem.h"
 
 #import <GQModularize/GQModuleCenter.h>
 
@@ -26,11 +27,8 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    self.clearsSelectionOnViewWillAppear = self.splitViewController.isCollapsed;
-    [super viewWillAppear:animated];
+    
+    [ListModule currentModule].mainNavigationController = self.navigationController;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,21 +40,13 @@
     if (!self.objects) {
         self.objects = [[NSMutableArray alloc] init];
     }
-    [self.objects insertObject:[NSDate date] atIndex:0];
+    [self.objects insertObject:[ListItem createItem] atIndex:0];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     
     [GQModuleCenter postEventName:@"ListCount" updateValue:[NSString stringWithFormat:@"%lu", (unsigned long)[self.objects count]]];
 }
 
-#pragma mark - Segues
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = self.objects[indexPath.row];
-        DetailViewController *controller = (DetailViewController *)[segue destinationViewController] ;
-        [controller setDetailItem:object];
-}
 
 #pragma mark - Table View
 
@@ -71,11 +61,19 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *object = self.objects[indexPath.row];
-    cell.textLabel.text = [object description];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"SettingsModule Text:%@", [[ListModule invokeWithIdentifier:@"SettingsModuleText"] gq_string]];
+    ListItem *object = self.objects[indexPath.row];
+    cell.textLabel.text = [object name];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@", [object settingText], [object date]];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ListItem *object = self.objects[indexPath.row];
+    
+    [ListModule invokeWithIdentifier:@"NewDetailViewController"
+                             options:@{@"object" : object}];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -8,12 +8,25 @@
 
 #import "ListModule.h"
 #import "UIStoryboard+List.h"
+#import "DetailViewController.h"
 
 @implementation ListModule
 
 - (id)performActionWithIdentifier:(NSString *)identifier options:(NSDictionary *)options
 {
-    return [[UIStoryboard listStoryboard] instantiateInitialViewController];
+    if ([identifier isEqualToString:GQModulePortalViewControllerIdentifier]) {
+        return [[UIStoryboard listStoryboard] instantiateInitialViewController];
+    } else if ([identifier isEqualToString:@"NewDetailViewController"]) {
+        DetailViewController *vc = [[UIStoryboard listStoryboard] instantiateViewControllerWithIdentifier:@"DetailViewController"];
+        
+        [vc setDetailItem:options[@"object"]];
+        
+        [self.mainNavigationController pushViewController:vc animated:YES];
+        
+        return vc;
+    }
+    
+    return nil;
 }
 
 @end

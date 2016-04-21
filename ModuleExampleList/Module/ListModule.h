@@ -10,4 +10,6 @@
 
 @interface ListModule : GQModule
 
+@property (nonatomic, weak) UINavigationController *mainNavigationController;
+
 @end
