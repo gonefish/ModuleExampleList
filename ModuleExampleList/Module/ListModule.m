@@ -13,6 +13,11 @@
 
 @implementation ListModule
 
++ (NSArray *)supportActionIdentifiers
+{
+    return @[@"CreateItem"];
+}
+
 - (id)performActionWithIdentifier:(NSString *)identifier options:(NSDictionary *)options
 {
     if ([identifier isEqualToString:GQModulePortalViewControllerIdentifier]) {
