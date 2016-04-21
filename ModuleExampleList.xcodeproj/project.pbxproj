@@ -42,6 +42,7 @@
 		E38C99AA1CB8CE8500A3D215 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		E3CC40CC1CC87F9A001E6BB2 /* ListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItem.h; sourceTree = "<group>"; };
 		E3CC40CD1CC87F9A001E6BB2 /* ListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListItem.m; sourceTree = "<group>"; };
+		E3CC40D11CC8B343001E6BB2 /* ListItemProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItemProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +128,7 @@
 				E302C4971CBF3FF0004C7D6D /* UIStoryboard+List.m */,
 				E3CC40CC1CC87F9A001E6BB2 /* ListItem.h */,
 				E3CC40CD1CC87F9A001E6BB2 /* ListItem.m */,
+				E3CC40D11CC8B343001E6BB2 /* ListItemProtocol.h */,
 			);
 			path = Module;
 			sourceTree = "<group>";

@@ -9,6 +9,7 @@
 #import "ListModule.h"
 #import "UIStoryboard+List.h"
 #import "DetailViewController.h"
+#import "ListItem.h"
 
 @implementation ListModule
 
@@ -24,6 +25,8 @@
         [self.mainNavigationController pushViewController:vc animated:YES];
         
         return vc;
+    } else if ([identifier isEqualToString:@"CreateItem"]) {
+        return [ListItem createItem];
     }
     
     return nil;

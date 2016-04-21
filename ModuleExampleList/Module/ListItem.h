@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ListItemProtocol.h"
 
-@interface ListItem : NSObject
+@interface ListItem : NSObject <ListItem>
 
 @property (nonatomic, strong) NSDate *date;
 
